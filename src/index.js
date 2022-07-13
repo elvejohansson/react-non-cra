@@ -1,7 +1,8 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-render(
-  <a href="https://google.com">Hello World!</a>,
-  document.getElementById('app')
-);
+import App from './App';
+
+import './index.css';
+
+createRoot(document.getElementById('app')).render(<App />);
