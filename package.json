@@ -2,7 +2,10 @@
   "name": "react-non-cra",
   "license": "MIT",
   "scripts": {
-    "start:dev": "webpack serve --config webpack.config.js --port 3000"
+    "start:prod": "webpack ",
+    "start:dev": "webpack serve --config webpack.config.js --port 3000",
+    "prettier:fix": "prettier --write '**/*.{js,jsx,ts,tsx,html,json}'",
+    "prettier:check": "prettier --check '**/*.{js,jsx,ts,tsx,html,json}'"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,6 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.7.1",
     "react-refresh": "^0.14.0",
     "react-refresh-typescript": "^2.0.7",
     "style-loader": "^3.3.1",

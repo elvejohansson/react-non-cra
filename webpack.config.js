@@ -20,7 +20,9 @@ module.exports = {
             loader: require.resolve('ts-loader'),
             options: {
               getCustomTransformers: () => ({
-                before: [isDevelopment && ReactRefreshTypeScript()].filter(Boolean),
+                before: [isDevelopment && ReactRefreshTypeScript()].filter(
+                  Boolean,
+                ),
               }),
               transpileOnly: isDevelopment,
             },
@@ -39,6 +41,6 @@ module.exports = {
       filename: './index.html',
       // favicon: './public/favicon.ico',
     }),
-    isDevelopment && new ReactRefreshWebpackPlugin()
+    isDevelopment && new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
 };
