@@ -5,10 +5,14 @@
     "module": "esnext",
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
+    "target": "esnext",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
     "strict": true,
-    "sourceMap": true,
-    "target": "esnext"
+    "sourceMap": true
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
